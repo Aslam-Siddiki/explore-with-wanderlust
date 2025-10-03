@@ -1,0 +1,186 @@
+<%= layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+    <div class="col-8 offset-2">
+        <!-- <br> -->
+        <h3>Create a New Listing</h3>
+        <form 
+            method="POST" 
+            action="/listings"      
+            novalidate   
+            class="needs-validation" 
+            enctype="multipart/form-data">
+            <div class="mb-3">
+
+                <label 
+                    for="title" 
+                    class="form-label
+                    ">
+                    <sup> 
+                        <b class="req">*</b>
+                    </sup> 
+                    Title 
+                </label> 
+                &nbsp;&nbsp;
+               
+                <input 
+                    name="listing[title]"  
+                    type="text" 
+                    placeholder="Add a catchy title" 
+                    class="form-control" 
+                    id="title" 
+                    required
+                >
+
+                <div 
+                    class="valid-feedback">
+                    Title looks good!
+                </div>
+                <div 
+                    class="invalid-feedback">
+                    Please choose title
+                </div>
+            </div>
+
+            <div class="mb-3">
+
+                <label 
+                    for="desc" 
+                    class="form-label"> 
+                    <sup> 
+                        <b 
+                            class="req">
+                            *
+                        </b>
+                    </sup> 
+                    Description 
+                    &nbsp;&nbsp;
+                </label>
+
+                <textarea 
+                    name="listing[description]" 
+                    placeholder="Enter Description" 
+                    type="text" 
+                    id="desc" 
+                    class="form-control" 
+                    required >
+                </textarea>
+
+                <div 
+                    class="invalid-feedback">
+                    Please provide a short description
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label 
+                    for="url" 
+                    class="form-label">
+                    Upload Listing Image
+                    &nbsp;&nbsp;
+                </label>
+                
+                <input 
+                    name="listing[image]"  
+                    type="file" 
+                    id="url" 
+                    class="form-control"
+                    required
+                >
+
+            </div>
+
+            <div class="row">
+               
+                <div class="mb-3 col-md-4">
+                    
+                    <label 
+                        for="price" 
+                        class="form-label">
+                        <sup> <b class="req">*</b></sup> 
+                        Price &nbsp;&nbsp;
+                    </label>
+
+                    <input 
+                        name="listing[price]"  placeholder="1200" 
+                        id="price" 
+                        class="form-control" 
+                        required
+                    >
+                    <div 
+                        class="invalid-feedback">
+                        Please enter price
+                    </div>
+
+                </div>
+           
+                <div class="mb-3 col-md-8">
+
+                    <label for="country" 
+                        class="form-label">
+                        <sup> 
+                            <b class="req">
+                                *
+                            </b>
+                        </sup>   
+                        Country 
+                        &nbsp;&nbsp;
+                    </label>
+
+                    <input 
+                        name="listing[country]" 
+                        type="text"  
+                        placeholder="Nepal" 
+                        id="country" 
+                        class="form-control" required
+                    >
+                    <div 
+                        class="invalid-feedback">
+                        Please enter the country name
+                    </div>
+
+                </div>
+        
+            </div>
+        
+            <div class="mb-3">
+
+                <label 
+                    for="location" 
+                    class="form-label">
+                    <sup> 
+                        <b class="req">
+                            *
+                        </b>
+                    </sup> 
+                    Location
+                    &nbsp;&nbsp;
+                </label>
+
+                <input 
+                    name="listing[location]"  
+                    type="text"
+                    placeholder="Ramgram, Lumbini" 
+                    id="location" 
+                    class="form-control" 
+                    required
+                >
+                <div 
+                    class="invalid-feedback">
+                    Please enter the location
+                </div>
+
+            </div>
+
+            <button 
+                type="submit" 
+                class="btn btn-success add-btn mt-3">
+                Add
+            </button>
+
+            <br>
+        </form>
+    </div>
+</div>    
+
