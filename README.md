@@ -26,7 +26,7 @@ Built with **Node.js, Express, MongoDB, and EJS**.
 ## ⚡ Getting Started
 
 1️⃣ **Clone the repo**
-```bash
+bash
 git clone  : https://github.com/Aslam-Siddiki/explore-with-wanderlust.git
 cd wanderlust
 
@@ -43,11 +43,11 @@ CLOUDINARY_SECRET=your_cloudinary_secret
 4️⃣ Run the app
 nodemon app.js
 
-App will run at: http://localhost:8080/listings
+App will run at: http://localhost:8080/listings on local
 
 🚀 Deployment
 Deployed on Render.
-🔗 Live Demo (???)
+🔗 Live Demo https://explore-with-wanderlust.onrender.com/listings
 
 📂 Repository
 GitHub Repo : https://github.com/Aslam-Siddiki/explore-with-wanderlust.git
@@ -56,7 +56,8 @@ GitHub Repo : https://github.com/Aslam-Siddiki/explore-with-wanderlust.git
 ![Wanderlust Homepage](screenshots/image.png)
 
 👤 Author
-**Aslam Siddiki**
+<b>ASLAM SIDDIKI</b>
+
 💻 Full-Stack Developer | MERN Stack Enthusiast 
 📍 India
 
@@ -64,3 +65,7 @@ GitHub Repo : https://github.com/Aslam-Siddiki/explore-with-wanderlust.git
 👨‍💻 GitHub: Aslam Siddiki
 💼 LinkedIn: www.linkedin.com/in/aslam-siddiki-9913ba332
 📧 Email: aslamsidd888@gmail.com
+
+>📝 Note:  
+> The web service starts from the following URL:  
+> 🔗 (https://explore-with-wanderlust.onrender.com/listings)
