@@ -36,7 +36,7 @@ Built with **Node.js, Express, MongoDB, and EJS**.
 
 ##
 
-3️⃣ Create a .env file in the root folder with:
+3️⃣ Create a .env file in the root folder with: <br>
     ATLASDB_URL=your_mongodb_atlas_connection_string <br>
     SECRET=your_session_secret <br>
     CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name <br>
@@ -51,7 +51,7 @@ Built with **Node.js, Express, MongoDB, and EJS**.
 
 ##
 
-5️⃣ On local:
+5️⃣ On local: <br>
     App will run at: http://localhost:8080/listings 
 
 ##
