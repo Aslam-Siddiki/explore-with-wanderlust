@@ -26,12 +26,12 @@ Built with **Node.js, Express, MongoDB, and EJS**.
 ## ⚡ Getting Started
 
 1️⃣ **Clone the repo**
-<br>
+    <br>
     git clone  : https://github.com/Aslam-Siddiki/explore-with-wanderlust.git <br>
 
 ##
 
-2️⃣ Install dependencies br
+2️⃣ Install dependencies <br>
     npm install
 
 ##
@@ -56,32 +56,32 @@ Built with **Node.js, Express, MongoDB, and EJS**.
 
 ##
 
-## 🚀 Deployment <br>
-    Deployed on Render. 
+🚀 Deployment <br>
+    Deployed on Render. <br>
     🔗 Live Demo https://explore-with-wanderlust.onrender.com/listings
 
 ##
 
-## 📂 Repository <br>
+📂 Repository <br>
     GitHub Repo : https://github.com/Aslam-Siddiki/explore-with-wanderlust.git
 
 ##
 
-## 📸 Screenshots
+📸 Screenshots
     ![Wanderlust Homepage](screenshots/image.png)
 
 ##
 
-## 👤 Author <br>
-    <b>ASLAM SIDDIKI</b> 
-    💻 Full-Stack Developer | MERN Stack Enthusiast 
+👤 Author <br>
+    <b>ASLAM SIDDIKI</b> <br>
+    💻 Full-Stack Developer | MERN Stack Enthusiast <br>
     📍 India
 
 ##
 
-## 📬 Contact <br>
-    👨‍💻 GitHub: https://github.com/Aslam-Siddiki 
-    💼 LinkedIn: www.linkedin.com/in/aslam-siddiki-9913ba332 
-    📧 Email: aslamsidd888@gmail.com 
+📬 Contact <br>
+    👨‍💻 GitHub: https://github.com/Aslam-Siddiki <br>
+    💼 LinkedIn: www.linkedin.com/in/aslam-siddiki-9913ba332 <br>
+    📧 Email: aslamsidd888@gmail.com <br>
 
 ##
