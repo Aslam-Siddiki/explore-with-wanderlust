@@ -4,6 +4,15 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 .container {
@@ -132,6 +141,71 @@ body{
     border-radius: 8px;
 }
 
+
+@media(min-width:781px) and (max-width: 1000px){
+    #map {
+        height:300px !important;
+        width:100%!important;
+    }
+
+    .card {
+        width: 80% !important;
+
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+@media(min-width:500px) and (max-width:780px){
+    #map {
+        height:300px !important;
+        width:100%!important;
+    }
+
+    .card {
+        width: 80% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .edit-btn {
+        width: 70px !important;
+        
+    }
+}
+
+@media(max-width:500px){
+    #map {
+        height: 200px!important;
+        width:100%!important;
+    }
+
+    .card {
+        width:100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .edit-btn {
+        width: 50px !important;
+        
+    }
+
+    .navbar {
+        position: fixed;
+        bottom: 0px;
+    }
+
+}
 
 
 
