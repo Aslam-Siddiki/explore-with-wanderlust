@@ -161,7 +161,7 @@ html {
 
 @media(min-width:500px) and (max-width:780px){
     #map {
-        height:300px !important;
+        height:250px !important;
         width:100%!important;
     }
 
