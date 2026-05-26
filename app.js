@@ -22,7 +22,7 @@ const listingRouter = require("./routes/listing.js");
 const reviewRouter  = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 
-const dbUrl = process.env.ATLASDB_URL;
+const DBURL = process.env.ATLASDB_URL;
 
 main()
     .then(()=>{
@@ -33,7 +33,7 @@ main()
     })
 
 async function main(){
-    await mongoose.connect(dbUrl);
+    await mongoose.connect(DBURL);
 }
 
 // SETUP FOR THE VARIOUS PATH:
@@ -46,7 +46,7 @@ app.use(express.static(path.join(__dirname,"/public")));
 app.use(express.json());
 
 const store = MongoStore.create({
-    mongoUrl: dbUrl,
+    mongoUrl: DBURL,
     crypto: {
         secret: process.env.SECRET,
     },
@@ -69,13 +69,6 @@ const sessionOptions = {
     }
 };
 
-//HOME ROUTE:
-// app.get("/",(req,res)=>{
-//     res.send("Hi, I am root");
-// });
-
-
-
 app.use(session(sessionOptions));
 app.use(flash());
 
@@ -93,16 +86,6 @@ app.use((req, res, next) => {
     next();
 });
 
-// app.get("/demouser",async(req, res) => {
-//     let fakeUser = new User({
-//         email: "student@gmail.com",
-//         username: "delta-student",
-
-//     });
-
-//     let registeredUser = await User.register(fakeUser, "helloworld");
-//     res.send(registeredUser);
-// });
 
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);
